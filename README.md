@@ -6,7 +6,9 @@ We demonstrate the advantage of our Dorfman methods in two simulation scenarios 
 
 Applied to GDSC RNA-seq data for trametinib (MEK inhibitor) response prediction in non-small cell lung cancer, Dorfman methods achieved superior predictive accuracy (RMSE=2.17-2.43) compared to adaptive LASSO/EN (RMSE=2.41-2.46) and traditional approaches SIS-LASSO, LASSO and EN (RMSE=2.49-2.84), with robust dorfman methods achieving superb performance, echoing the fact that data is non-normal, with outliers and violations LR assumptions. When signature genes for trametinib response in NSCLC are grouped into tiers according to literature evidence, robust Dorfman selections showed significant enrichment for genes of tiers 1-2 (clinical hits) compared to adaptive LASSO/EN, SIS-LASSO and vanilla EN/LASSO, with robust Dorfman-EN achieving the highest clinical ratio. Interestingly Moreover, genes exclusively uncovered by robust dorfman (not classical) exhibited higher deviation from normality (JB score) along with extreme kurtosis and skewness.
 
+<img width="215" height="118" alt="image" src="https://github.com/user-attachments/assets/59ba3895-538b-4f47-a7f0-593d4702814e" />
 
+<img width="182" height="113" alt="image" src="https://github.com/user-attachments/assets/3736eb8e-d3d0-4dd0-9c2d-eca02ffd769f" />
 
 Our results demonstrate that robust-OGK-Dorfman-Adaptive EN/ EN as the method of choice for feature selection of high-dimensional, group correlated data. We plan to extend this to ultra-high dimension (e.g. p=100,000), incorporating improvements in the first step such as block OGK, block graphical lasso, and LSH in group merging as well as bayesian optimized hyperparameter selection instead of CV, with use of HPC clusters. 
 
